@@ -1,5 +1,5 @@
 # Alpha-Zero
-Alpha zero is game bot for which play Tic-Tac-Toe game. A goal of the bot is beat humans in Tic-Tac-Toe game. I choise Tic-Tac-Toe game because limitation of cpu powers. Alpha-zero bot also working almost all board game like Chess , Go and count four. Game environment of Tic-Tac-Toe have 5 rows , 5 column and 4( "O" and "X" Match) therefor game make deficult then normal game.
+Alpha zero is the game bot which plays Tic-Tac-Toe game. A goal of the bot is to beat humans in Tic-Tac-Toe. I choose Tic-Tac-Toe game because of limitation of CPU power. Alpha-zero bot applies to almost all board games like Chess, Go and count four etc. This game environment has 5 rows, 5 columns. To win this game player has to match 4 "O"s and 4 "X"s. It makes this game more difficult than normal Tic-Tac-Toe.
 
 References:  
 1. AlphaZero: Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm
@@ -7,12 +7,12 @@ References:
 
 ## ScreenShot
 UI for game
-![GamePlay](https://raw.githubusercontent.com/fahim9898/alpha_zero/master/video/playing.gif)
+- ![GamePlay](https://raw.githubusercontent.com/fahim9898/alpha_zero/master/video/playing.gif)
 
 ## Motivation
-I have two Motive for making this project
-    - Inspired by google deepmind research team they make alpha zero bot defied world champion of GO "Mr Lee Sedol"
-    - Watch Tanmay Bakshi youtube video [link](https://www.youtube.com/watch?v=9XVmTMv2TOE) , his make game bot of 2048 game using alpha-zero algorithm . Lots of thing learn from that video
+I have inspired by two projects
+    - First, one is google deepmind research team's project in which they have developed Alpha zero bot which defeated the world champion of GO "Mr Lee Sedol"
+    - Second one is [Tanmay Backshi youtube vieo](https://www.youtube.com/watch?v=9XVmTMv2TOE), He has made game bot of 2048 game using alpha-zero algorithm. I learned many things from this video
 
 ### Requirements
 To play with Trained AI models
