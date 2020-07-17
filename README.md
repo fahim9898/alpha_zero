@@ -7,7 +7,7 @@ References:
 
 ## ScreenShot
 UI for game
-![out](https://raw.githubusercontent.com/junxiaosong/AlphaZero_Gomoku/master/playout400.gif)
+- ![out](https://raw.githubusercontent.com/junxiaosong/AlphaZero_Gomoku/master/playout400.gif)
 
 ## Motivation
 I have two Motive for making this project
