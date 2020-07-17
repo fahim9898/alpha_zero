@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>tic_tac_toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Quando&family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'style.css') }}" />
+  </head>
+  <body>
+    <div id="container-1" style="display: none;">
+      <h1 id="header">Alpha - Zero</h1>
+      <div class="slect_player_container flex-column">
+        <p style="font-family: Ubuntu; font-size: 1.5rem;margin-top: -3vh;color: #002651;">Play Game With</p>
+        
+        <span class="flex-row">
+          <button  id="alpha_zero_btn" class="btn">Alpha Zero</button>
+          <button  id="second_btn" class="btn"> 2 Player</button>
+        </span>
+      </div>
+    </div>
+    <div id="container-2" style="display: none;">
+        <div id="score-board">
+          <!-- <div id="ai_img"></div> -->
+          <img src="{{ url_for('static', filename = 'artificial_intelligence.svg') }}" class="img-fluid mx-auto d-block position-relative" style="width: 100px; top: 12%;" alt="AI">
+          <span class="inline position-relative" style="top:20%;">
+            <p class="score_text">Score of Bot &nbsp;&nbsp;&nbsp;&nbsp;<span class="score_value" id="score_of_bot">0</span> </p>
+          </span>
+          <!-- <div id="human_img"></div> -->
+          <img src="{{ url_for('static', filename = 'person.svg') }}" class="img-fluid mx-auto d-block position-relative" style="width: 100px; top: 15%;" alt="AI">
+          <span class="inline">
+            <p class="score_text">Score of Human &nbsp;&nbsp;&nbsp;&nbsp;<span class="score_value" id="score_of_human"">0</span> </p>
+          </span>
+        </div>
+        <div id="board-env">
+            <h1 id="header-2">Alpha - Zero</h1>
+            <div class="flex-container">
+              <div class="grid-container">
+                <!-- 3 x 3 tic-tac-toe -->
+                <!-- <div class="grid-item remove-left-border remove-top-border"></div>
+                        <div class="grid-item remove-top-border "></div>
+                        <div class="grid-item remove-top-border remove-right-border"></div>
+                        <div class="grid-item remove-left-border"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item remove-right-border"></div>
+                        <div class="grid-item remove-left-border remove-bottom-border"></div>
+                        <div class="grid-item remove-bottom-border"></div>
+                        <div class="grid-item remove-right-border remove-bottom-border"></div> -->
+              </div>
+            </div>
+            <button id="reset_btn" class="btn" style="pointer-events: none; opacity: 0;">Reset</button>
+
+            <div id="game_end_state" class="CENTER" style="display: none;">
+              <p class="CENTER" id="game_end_text" style="font-size: 1.5rem;font-weight: 500;"></p>
+            </div>
+            <div class="lds-ellipsis" style="display: none;">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <!-- <div class="small-score-board">
+            
+            </div> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename = 'main.js') }}"></script>
+    <script>
+      /* $(document).ready(()=>{
+          private_socket = io.connect('http://' + document.domain + ':' + location.port + '/private');
+          console.log("Private socket Created")
+
+          private_socket.on("server response", (data) => {
+              console.log(data)
+              state[parseInt(data["action"])] = current_player + 1;
+              history[num_fill_box] = current_player;
+              last_move = parseInt(data["action"])
+              $(`#box-${data["action"]}`).html((current_player == 0) ? "O" : "X")
+              current_player = (current_player + 1) % 2
+              num_fill_box += 1
+          })
+      }) */
+    </script>
+    <!-- <script src="dist/build.js"></script> -->
+  </body>
+</html>
