@@ -46,8 +46,8 @@ python train.py
 ```
 
 ### Moduls
->Using Socketio we communicate between web server and client to realtime data exchange
->web_server_alphazero.py : Is a web server.Provide api take game input as game state , last move and current player and provide output as action position
+>Socketio provide real time connection between client and server
+- web_server_alphazero.py : Is a web server. Provide api, It's takes input game state , last move and current player than provide output as action position
 - game.py : Game environment 
 - mcts.py : Implementation of monte carlo tree search
 - policy.py : Create model and fit Model
