@@ -11,8 +11,8 @@ UI for game
 
 ## Motivation
 I have inspired by two projects
-    - First, one is google deepmind research team's project in which they have developed Alpha zero bot which defeated the world champion of GO "Mr Lee Sedol"
-    - Second one is [Tanmay Backshi youtube vieo](https://www.youtube.com/watch?v=9XVmTMv2TOE), He has made game bot of 2048 game using alpha-zero algorithm. I learned many things from this video
+- First, one is google deepmind research team's project in which they have developed Alpha zero bot which defeated the world champion of GO "Mr Lee Sedol"
+- Second one is [Tanmay Backshi youtube vieo](https://www.youtube.com/watch?v=9XVmTMv2TOE), He has made game bot of 2048 game using alpha-zero algorithm. I learned many things from this video
 
 ### Requirements
 To play with Trained AI models
