@@ -54,8 +54,8 @@ python train.py
 - train.py :  All training done here
 
 ### Source
-[Tanmay Bakshi youtube video](https://www.youtube.com/watch?v=9XVmTMv2TOE)
-[Basic about Alpha-Zero](https://medium.com/@jonathan_hui/alphago-zero-a-game-changer-14ef6e45eba5)
+* [Basic about Alpha-Zero](https://medium.com/@jonathan_hui/alphago-zero-a-game-changer-14ef6e45eba5)
+* [Tanmay Bakshi youtube video](https://www.youtube.com/watch?v=9XVmTMv2TOE)
 
 **Tips for training:**
-- Board have 5 * 5 board have 4 row. For this case,we obtain good model in around 1000-1500 self-play game
+- Board has 5 * 5 grid and 4 rows match. Bot achive good performance in 1000-1500 game plays and take time 2 to 3 hours
