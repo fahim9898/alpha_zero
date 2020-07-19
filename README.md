@@ -31,7 +31,7 @@ conda create -n <your_env_name> python=3.6.5
 pip install -r requirements.txt
 ```
 
-### getting statted
+### Getting statted
 activate env
 ```sh
 conda activate your_env_name
