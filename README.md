@@ -38,7 +38,7 @@ conda activate your_env_name
 ```
 To play with game on browser
 ```
-python web_server_alphazero.py
+python web_alphazero_server.py
 ```
 If you want train the bot policy model
 ```
